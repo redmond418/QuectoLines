@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Alchemy.Inspector;
 using UnityEngine;
 
-namespace U1W
+namespace Redmond.QuectoLines
 {
     [ExecuteInEditMode]
     public class LineMeshGenerator : MonoBehaviour, ILineGenerator2d

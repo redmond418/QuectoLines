@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace U1W
+namespace Redmond.QuectoLines
 {
     public interface ILineGenerator2d
     {

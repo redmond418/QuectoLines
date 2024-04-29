@@ -3,7 +3,7 @@ using Alchemy.Inspector;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace U1W
+namespace Redmond.QuectoLines
 {
     [ExecuteInEditMode]
     public class LineMeshUI : Graphic, ILineGenerator2d

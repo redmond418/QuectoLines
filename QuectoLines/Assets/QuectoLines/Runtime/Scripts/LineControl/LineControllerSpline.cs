@@ -3,7 +3,7 @@ using Alchemy.Inspector;
 using UnityEngine;
 using UnityEngine.Splines;
 
-namespace U1W
+namespace Redmond.QuectoLines
 {
     [ExecuteInEditMode]
     public class LineControllerSpline : MonoBehaviour

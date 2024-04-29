@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace U1W
+namespace Redmond.QuectoLines
 {
     [ExecuteInEditMode]
     public class LineControllerTwoPoints : MonoBehaviour

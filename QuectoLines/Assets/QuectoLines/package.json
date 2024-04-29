@@ -1,0 +1,15 @@
+{
+    "name": "com.redmond.quecto-lines",
+    "version": "0.1.0",
+    "displayName": "Quecto Lines",
+    "description": "Line generator for Myself",
+    "unity": "2022.3",
+    "author": {
+        "name": "Redmond"
+    },
+    "dependencies": {
+        "com.annulusgames.alchemy": "https://github.com/AnnulusGames/Alchemy.git?path=/Alchemy/Assets/Alchemy",
+        "com.unity.splines": "2.4.0",
+        "com.unity.mathematics": "1.2.6"
+    }
+}

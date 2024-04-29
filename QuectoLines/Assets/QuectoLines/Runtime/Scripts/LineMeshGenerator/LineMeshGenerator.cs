@@ -88,6 +88,7 @@ namespace Redmond.QuectoLines
             MeshInitialize();
         }
 
+        [Button]
         private void MeshInitialize()
         {
             if (meshFilter is null) return;
@@ -97,6 +98,7 @@ namespace Redmond.QuectoLines
 
         private void Update()
         {
+            if(meshFilter == null) return;
             if (mesh is null) MeshInitialize();
             if (meshRenderer is not null) meshRenderer.sortingOrder = orderInLayer;
             if (connectSamePoints && positions.Count >= 2) for (int i = positions.Count - 2; i >= 0; i--)

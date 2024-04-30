@@ -99,8 +99,8 @@ namespace Redmond.QuectoLines
         private void Update()
         {
             if(meshFilter == null) return;
-            if (mesh is null) MeshInitialize();
-            if (meshRenderer is not null) meshRenderer.sortingOrder = orderInLayer;
+            if (mesh == null) MeshInitialize();
+            if (meshRenderer != null) meshRenderer.sortingOrder = orderInLayer;
             if (connectSamePoints && positions.Count >= 2) for (int i = positions.Count - 2; i >= 0; i--)
                 {
                     if (positions[i] == positions[i + 1]) positions.RemoveAt(i + 1);

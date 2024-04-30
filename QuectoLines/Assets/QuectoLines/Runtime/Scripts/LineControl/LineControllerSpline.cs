@@ -36,7 +36,7 @@ namespace Redmond.QuectoLines
 
         private void Update()
         {
-            if (line is null || splineContainer is null) return;
+            if (line == null || splineContainer == null) return;
             switch (divideMode)
             {
                 case DivideType.Equidistant:

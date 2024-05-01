@@ -6,7 +6,6 @@ internal static class GameObjectCreationMenu
     private static void CreatePrefab(MenuCommand menuCommand, string prefabName)
     {
         var prefab = Resources.Load<GameObject>(prefabName);
-        Debug.Log(prefab);
         if (prefab == null) return;
         GameObject obj = GameObject.Instantiate(prefab);
         obj.name = prefab.name;

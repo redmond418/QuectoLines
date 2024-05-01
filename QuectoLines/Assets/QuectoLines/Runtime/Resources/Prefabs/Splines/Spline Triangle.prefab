@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1781005306408486163}
   - component: {fileID: 3455166148939953443}
   m_Layer: 0
-  m_Name: TriangleSpline
+  m_Name: Spline Triangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

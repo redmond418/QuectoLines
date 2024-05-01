@@ -1,0 +1,16 @@
+{
+    "name": "Redmond.QuectoLines.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:03adb908cd14d44a0949e7fcc79b43ef"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -13,6 +13,7 @@ namespace Redmond.QuectoLines
         [SerializeField] private int splineIndex;
         [SerializeField] private bool isLoop;
         [SerializeField] private bool useSplinePosition = true;
+        [SerializeField] private bool useSplineRotation = true;
         [SerializeField/*, HorizontalGroup("ends"), Range(0, 2)*/] private float endA = 0;
         [SerializeField/*, HorizontalGroup("ends"), Range(0, 2)*/] private float endB = 1;
         [SerializeField] private DivideType divideMode;
@@ -87,7 +88,8 @@ namespace Redmond.QuectoLines
             for (int i = 0; i < values.Count; i++)
             {
                 Vector2 pos = (Vector3)splineContainer.EvaluatePosition(splineIndex, isLoop ? values[i] - Mathf.Floor(values[i]) : Mathf.Clamp01(values[i]));
-                if(!useSplinePosition) pos = Quaternion.Inverse(splineContainer.transform.rotation) * (pos - (Vector2)splineContainer.transform.position);
+                if(!useSplinePosition) pos -= (Vector2)splineContainer.transform.position;
+                if(!useSplineRotation) pos = Quaternion.Inverse(splineContainer.transform.rotation) * pos;
                 if (i < positions.Count) positions[i] = pos;
                 else positions.Add(pos);
             }

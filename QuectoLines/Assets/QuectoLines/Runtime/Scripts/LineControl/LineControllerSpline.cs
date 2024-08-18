@@ -87,7 +87,7 @@ namespace Redmond.QuectoLines
             for (int i = 0; i < values.Count; i++)
             {
                 Vector2 pos = (Vector3)splineContainer.EvaluatePosition(splineIndex, isLoop ? values[i] - Mathf.Floor(values[i]) : Mathf.Clamp01(values[i]));
-                if(!useSplinePosition) pos -= (Vector2)splineContainer.transform.position;
+                if(!useSplinePosition) pos = Quaternion.Inverse(splineContainer.transform.rotation) * (pos - (Vector2)splineContainer.transform.position);
                 if (i < positions.Count) positions[i] = pos;
                 else positions.Add(pos);
             }
